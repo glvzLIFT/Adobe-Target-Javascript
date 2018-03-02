@@ -1,0 +1,4 @@
+if(user.sessionId!=user.getLocal('lastSessionId')) {
+   user.setLocal('lastSessionId', user.sessionId);
+   return (user.get('visitNumber') || 0) + 1;
+}
