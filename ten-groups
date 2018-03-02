@@ -1,0 +1,47 @@
+if (!user.get('ten-groups')) {
+
+var ran_number=Math.floor​(Math.random()*99);
+
+if(ran_number <= 9) {
+
+return 'Group1';
+
+} else if(ran_number <= 19) {
+
+return 'Group2';
+
+} else if(ran_number <= 29) {
+
+return 'Group3';
+
+} else if(ran_number <= 39) {
+
+return 'Group4';
+
+} else if(ran_number <= 49) {
+
+return 'Group5';
+
+} else if(ran_number <= 59) {
+
+return 'Group6';
+
+} else if(ran_number <= 69) {
+
+return 'Group7';
+
+} else if(ran_number <= 79) {
+
+return 'Group8';
+
+} else if(ran_number <= 89) {
+
+return 'Group9';
+
+} else {
+
+return 'Group10';
+
+}
+
+} 
