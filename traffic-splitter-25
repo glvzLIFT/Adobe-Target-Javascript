@@ -1,0 +1,23 @@
+if (!user.get('fourgroups')) {
+
+var ran_number=Math.floor​(Math.random()*99);
+
+if(ran_number <= 24) {
+
+return 'GroupA';
+
+} else if(ran_number <= 49) {
+
+return 'GroupB';
+
+} else if(ran_number <= 74) {
+
+return 'GroupC';
+
+} else {
+
+return 'GroupD';
+
+}
+
+} 
