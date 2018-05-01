@@ -1,0 +1,12 @@
+var isKitKatPlus = false;
+    var ua = user.header('user-agent').toLowerCase();
+
+    if (isKitKatPlus != null && isKitKatPlus != 'undefined')
+	    if (ua != null && ua != 'undefined' && ua.indexOf('android') > -1) {
+	    	var match = ua.match(/android\s([0-9\.]*)/);
+	    	var ver = parseFloat(match[1]);
+	    	if (ver != null && ver != 'undefined' && ver >= 4.4)  {
+	    		isKitKatPlus = true;
+	    	}
+	    }
+    return isKitKatPlus;
