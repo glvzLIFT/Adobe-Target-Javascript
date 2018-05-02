@@ -1,0 +1,8 @@
+var screenW = mbox.param('screenWidth');
+var screenFlag = false; 
+
+if (screenW > 768) {
+var screenFlag = true;
+}
+
+return screenFlag;
