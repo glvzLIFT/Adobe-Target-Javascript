@@ -1,0 +1,9 @@
+var deviceType = "none";
+var deviceType = user.header('user-agent');
+var isDesk = false;
+if (deviceType != null && deviceType != 'undefined'){
+if (deviceType.indexOf('windows') > -1 || deviceType.indexOf('WINDOWS') > -1 || deviceType.indexOf('Windows') > -1 || deviceType.indexOf('Mac OS') > -1) {
+isDesk = true;
+} 
+}
+return isDesk;
